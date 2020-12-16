@@ -1,4 +1,4 @@
-html {
+/*html {
 	font-size: 100%;
 }
 
@@ -36,8 +36,71 @@ p {
 
 @media screen and (min-width: 700px){
 
+body {
+	font-size: 2em;
+	padding: 1%;
+}
 }
 
 @media screen and (min-width: 800px){
 
+}*/
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-size: 16px;
+  position: relative;
+}
+
+article {
+	position: relative;
+	padding: 5%;
+	text-align: justify;
+}
+
+body:before {
+  	content: '';
+  	background-image: url('../images/bg.jpg');
+  	background-position: sticky;
+  	background-size: cover;
+	position: fixed;
+  	left: 0;
+  	top: 0;
+  	bottom: 0;
+  	width: 100vw;    
+  	opacity: 0.2;
+  	z-index: -1;
+  	height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  /*text-transform: uppercase;*/
+  text-align: center;
+}
+
+h1:after {
+	content:url('../images/text-separator.png');
+	display: block;
+	margin: 0 auto;	
+}
+
+.chapter-mark {
+	text-align: center;
+}
+
+.left-indent {
+  padding-left: 2em;
+}
+
+p{
+	font-size: 2em;
+}
+p:before {
+  content: '';
+  display: inline-block;
+  width: 3em;
 }
