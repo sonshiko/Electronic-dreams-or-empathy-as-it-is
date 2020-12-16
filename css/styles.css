@@ -1,0 +1,39 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-size: 1.2em;
+	padding: 1%;
+}
+
+article {
+	position: relative;	
+}
+
+article img {
+	position: sticky;
+    left: 0;
+    top: 0;
+    width: 100vw;    
+    opacity: 0.2;
+    z-index: -1;
+}
+
+article h1 {
+	position: absolute;	
+	text-align: center;
+	top: 100px;
+}
+
+.chapter-mark {
+	text-align: center;
+}
+
+@media screen and (min-width: 700px){
+
+}
+
+@media screen and (min-width: 800px){
+
+}
