@@ -48,11 +48,13 @@ body {
 
 html {
 	font-size: 100%;
+	width: 100%;
 }
 
 body {
+	width: 100%;
 	font-size: 16px;
-  position: relative;
+ 	position: relative;
 }
 
 article {
@@ -64,7 +66,7 @@ article {
 body:before {
   	content: '';
   	background-image: url('../images/bg.jpg');
-  	background-position: sticky;
+  	background-position: center;
   	background-size: cover;
 	position: fixed;
   	left: 0;
@@ -84,6 +86,7 @@ h1 {
 
 h1:after {
 	content:url('../images/text-separator.png');
+	width: 100%;
 	display: block;
 	margin: 0 auto;	
 }
