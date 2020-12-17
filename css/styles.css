@@ -63,7 +63,7 @@ p{
 p:before {
   content: '';
   display: inline-block;
-  width: 3em;
+  width: 1.5em;
 }
 
 @media screen and (max-width: 768px){
