@@ -56,7 +56,7 @@ h1 {
   padding-left: 2em;
 }*/
 
-p{
+p, ul 	{
 	font-size: 2em;
 }
 
