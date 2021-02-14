@@ -1,15 +1,21 @@
 html {
-	font-size: 16px;
+	font-size: 100%;
 	width: 100%;
 }
 
 body {
 	width: 100%;
-	font-size: 100%;
+	font-size: 16px;
  	position: relative;
 }
 
-body:before {
+article {
+	position: relative;
+	padding: 5%;
+	text-align: justify;
+}
+
+/*body:before {
   	content: '';
   	background-image: url('../images/bg.jpg');
   	background-position: center;
@@ -22,34 +28,11 @@ body:before {
   	opacity: 0.2;
   	z-index: -1;
   	height: 100vh;
-}
+}*/
 
 h1 {
-  font-size: 1.25em;  
-  text-align: center;  
-}
-
-article {
-	position: relative;
-	padding: 5%;
-	text-align: justify;
-}
-
-.story {
-	width: 100vw;
-	padding: 2.5%;
-	margin-bottom: 10px;
-}
-
-.story img {
-	width: 95vw;
-	margin: 0 auto;
-}
-
-.bookTitle {
-  font-size: 1.5em;  
+  font-size: 3em;  
   text-align: center;
-  text-decoration: underline;  
 }
 
 /*h1:after {
@@ -59,7 +42,7 @@ article {
 	margin: 0 auto;	
 }*/
 
-.text-separator{
+.text-separator {
 	width: 50%;
 	display: block;
 	margin: 0 auto;	
@@ -74,7 +57,7 @@ article {
 }*/
 
 p, ul 	{
-	font-size: 1.1em;
+	font-size: 2em;
 }
 
 p:before {
@@ -83,37 +66,35 @@ p:before {
   width: 1.5em;
 }
 
-@media screen and (min-width: 640px){
+.copyrightOf {
+	font-size: 1.8em;
+	font-style: italic;
+	text-align: right;
+}
+
+@media screen and (max-width: 768px){
 	h1 {
 	  	font-size: 1.7em;  
 	  	text-align: center;
 	}
-	p {
+	p, ul {
 		font-size: 1.3em;
 	}
-	.story {
-		display: inline;
-	}
-	.story img {		
-		width: 45vw;
-		margin: 0 auto;
-	}
-
-	.bookTitle {
-		font-size: 1.5em;  
-		text-align: center;
-		text-decoration: underline;  
+	.copyrightOf {
+		font-size: 1.1em;
 	}
 }
 
-/*
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 435px){
 	h1 {
 	  	font-size: 1.25em;  
 	  	text-align: center;
 	}
-	p {
+	p, ul {
 		font-size: 1.1em;
+	}
+	.copyrightOf {
+		font-size: 0.9em;
 	}
 }
 
@@ -122,8 +103,10 @@ p:before {
 	  	font-size: 1.1em;  
 	  	text-align: center;
 	}
-	p {
+	p, ul {
 		font-size: 0.9em;
 	}
+	.copyrightOf {
+		font-size: 0.7em;
+	}
 }
-*/
